@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="BDD Test Suite" verbose="1" parallel="tests"
+	thread-count="2" >
+    <test name="111" annotations="JDK"
+		preserve-order="true">
+        <parameter name="platformName" value="android"/>
+        <parameter name="platformVersion" value="10"/>
+        <parameter name="deviceName" value="Galaxy Tab S4"/>
+        <classes>
+            <class name="MyRunner.AppRunner" />
+        </classes>
+    </test> <!-- Test -->
+    <test name="222" annotations="JDK"
+          preserve-order="true">
+        <parameter name="platformName" value="android"/>
+        <parameter name="platformVersion" value="11"/>
+        <parameter name="deviceName" value="Galaxy S21"/>
+        <classes>
+            <class name="MyRunner.AppRunner2" />
+        </classes>
+    </test>
+
+
+
+</suite>
